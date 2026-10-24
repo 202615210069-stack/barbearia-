@@ -1,0 +1,329 @@
+*{
+   margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+:root{
+   --preto: #000000;
+--branco: #ffffff;
+--cinza-escuro: #2b2b2b; 
+    --cinza: #4a4a4a;   
+    --fonte-titulo:"Geologica", sans-serif;
+    --fonte-texto:"inter", sans-serif;
+
+}
+body{
+    font-family: var(--fonte-texto);
+}
+.container{
+
+    max-width: 1200px;
+    margin:0 auto;
+     padding:20px;
+}
+#topo{
+   min-height: 600px;
+   padding: 20px 10px;
+    background-image: linear-gradient(var(--preto), var(--cinza-escuro) );
+    color: var(--branco);
+}
+#topo h1 img {
+    width: 180px;
+    filter: invert(1);
+}
+
+.detalhe-amarelo {
+      color: #f2b705;
+  }
+.grid-topo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+#menu-topo {
+    grid-column: 2 / 4;
+
+}
+.grid-topo > h2{
+grid-column: 1/3;
+align-self: center;
+font-family: var(--fonte-titulo);
+font-size: 5rem;
+font-weight: 900;
+text-align: center;
+line-height: 100%;
+text-shadow: 4px 8px 10px #00000060;
+}
+#menu-topo ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+#menu-topo a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: var(--fonte-titulo);
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+#menu-topo a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+    #menu-topo .atual{
+         color: orange;
+    text-decoration: underline;
+}
+ 
+#info {
+    min-height: 370px;
+    background-color: var(--cinza);
+    padding: 20px 10px;   
+}
+#info .icones img {
+    width: 90px;
+}
+
+#info h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
+    font-weight: 900;
+   background-color: #f2b705;
+    color: var(--preto);
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    width:fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+   #info .icones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-top: 40px;
+   } 
+ .icones article {
+ max-width: 260px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+
+}
+
+.icones h4{
+text-align: center;
+font-size: 1.15rem;
+color: var(--preto);
+font-weight: 900;
+margin-top: 20px;
+}
+#cortes {
+    min-height: 660px;
+    padding: 20px 10px;
+}
+#cortes h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--preto);
+    margin: 20px 0;
+}
+.cortes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 30px;
+}
+.cortes article img {
+    display: block;
+    width: 220px;
+    height: 250px;
+    object-fit: cover;
+}
+.cortes > article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px auto auto auto;
+    justify-items: center;
+    align-items: end;
+}
+.cortes h4 {
+    font-size: 1.5rem;
+    color: var(--preto);
+    font-family: var(--fonte-titulo);
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+}
+.cortes p {
+    font-size: 1.15rem;
+    color: var(--cinza);
+}
+.bt-cinza {
+    background-color: var(--cinza);
+    color:#f2b705 ;
+    font-size: 1.15rem;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px #00000025;
+    text-decoration: none;
+}
+.bt-cinza:hover {
+    background-color: #f2b705;
+    color: var(--preto);
+}
+#quemsomos {
+    min-height: 540px;
+    background-color: rgba(58, 54, 54, 0.777);
+    padding: 20px 10px;
+}
+
+.grid-quemsomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: start;
+}
+
+#quemsomos h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--preto);
+    margin: 20px 0;
+    grid-column: 1/2;
+}
+
+#quemsomos img {
+    grid-row: 1/5;
+    grid-column: 2/3;
+    width: 800px;
+}
+#nossoestabelecimento {
+    min-height: 540px;
+    background-color: var(--cinza);
+    padding: 10px 20px;
+}
+
+#nossoestabelecimento h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--branco);
+    margin: 20px 0;
+    grid-column: 1/2;
+}
+
+.grid-nossoestabelecimento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-nossoestabelecimento img {
+    grid-column: 2/3;
+    grid-row: 1/7;
+}
+
+.grid-nossoestabelecimento p {
+    font-size: 1.25rem;
+    color: var(--branco);
+    width: 80%;
+}
+#rodape {
+    background-color: var(--cinza-claro);
+    min-height: 380px;
+    background-image: url("imagem/man-hair.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+}
+
+.grid-rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 250px;
+}
+
+#rodape h1 img {
+    width: 350px;
+}
+
+#redes {
+    display: flex;
+    gap: 15px;
+}
+
+#redes img {
+    width: 40px;
+}
+.area-interna {
+    min-height: 600px;
+    padding: 10px 20px;
+}
+
+.area-interna h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--branco);
+    margin: 20px 0;
+}
+.area-interna p {
+  font-size: 1.15rem;
+  color: var(--preto);
+  line-height: 150%;
+  text-indent: 48px;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+.area-interna .imagem-direita {
+  width: 450px;
+  border: 5px solid var(--cinza-escuro);
+  border-radius: 10px;
+  margin: 5px;
+  float: left;
+}
+header#topo img,
+footer#rodape img {
+  max-width: 180px;
+  height: auto;
+  display: block;
+}
+
+header#topo img,
+footer#rodape img {
+  max-width: 180px;
+  height: auto;
+  display: block;
+}
+
+#redes img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+header#topo .container > img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.imagem-esquerda {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border: 5px solid var(--roxo-escuro, #333);
+  border-radius: 10px;
+  margin: 10px 20px 10px 0;
+  float: left;
+}
